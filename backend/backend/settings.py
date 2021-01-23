@@ -141,7 +141,7 @@ STATICFILES_DIRS = [
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
-    'https://naughty-villani-ac272a.netlify.app/',
-    'https://dtodo2.herokuapp.com/',
+    'http://naughty-villani-ac272a.netlify.app/',
+    'http://dtodo2.herokuapp.com/',
     '127.0.0.1',
 ]
