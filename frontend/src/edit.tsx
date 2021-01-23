@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import axios from "axios";
+import axios from "./axios";
 
 interface Props {
   item: IItem | undefined;
@@ -32,12 +32,12 @@ function Modal({ item, updateItem, close, addItem, addingItem }: Props) {
           description: desc,
           completed: checked,
         };
-        const data = await axios.post("http://localhost:8000/api/todos/", todo);
+        const data = await axios.post("api/todos/", todo);
 
         (await data) && addingItem(data.data);
       } else {
         const data = await axios.put(
-          `http://localhost:8000/api/todos/${item?.id}/`,
+          `api/todos/${item?.id}/`,
           {
             title,
             description: desc,

@@ -1,9 +1,8 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Todo from "./todo";
-import axios from "axios";
+import axios from "./axios";
 import Edit from "./edit";
 
 // const todoItems = [
@@ -45,7 +44,7 @@ function App() {
   useEffect(() => {
     const getTodo = async () => {
       try {
-        const todos = await axios.get("http://localhost:8000/api/todos");
+        const todos = await axios.get("api/todos");
         await setTodolist(todos.data);
         setLoading(false);
       } catch (error) {

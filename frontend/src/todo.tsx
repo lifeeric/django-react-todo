@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios from "./axios";
 
 interface Props {
   todolist: any[];
@@ -11,7 +11,7 @@ interface Props {
 function App({ todolist, viewCompleted, selectedItem, removeItem }: Props) {
   const deleteHandler = async (id: number) => {
     try {
-      const data = await axios.delete(`http://localhost:8000/api/todos/${id}`);
+      const data = await axios.delete(`api/todos/${id}`);
       await data && removeItem(id)
     } catch (error) {
       throw new Error(error);
