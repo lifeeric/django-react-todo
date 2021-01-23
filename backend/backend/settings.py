@@ -141,4 +141,5 @@ CORS_ORIGIN_WHITELIST = [
 
 ALLOWED_HOSTS = [
     'dtodo2.herokuapp.com',
+    'naughty-villani-ac272a.netlify.app'
 ]
