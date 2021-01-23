@@ -135,8 +135,6 @@ STATICFILES_DIRS = [
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://localhost:8000',
-    'http://naughty-villani-ac272a.netlify.app',
-    'http://dtodo2.herokuapp.com',
 ]
 
 ALLOWED_HOSTS = [
