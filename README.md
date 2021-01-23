@@ -1,6 +1,7 @@
 # django-react-todo
 Django Rest API + React for learning
 
+## [LIVE DEMO](https://naughty-villani-ac272a.netlify.app/)
 
 ## Requirements
 
