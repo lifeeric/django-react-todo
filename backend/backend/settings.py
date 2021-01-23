@@ -133,8 +133,8 @@ STATICFILES_DIRS = [
 # we whitelist localhost:3000 because that's where
 # frontend will be served
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
-    'http://localhost:8000',
+    # 'http://localhost:3000',
+    # 'http://localhost:8000',
     'http://naughty-villani-ac272a.netlify.app',
     'http://dtodo2.herokuapp.com'
 ]
